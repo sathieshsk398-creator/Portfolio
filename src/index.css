@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0D0D0D;
+    color: #EDEDED;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Figma Theme Card & Accent Styles */
+.theme-card {
+  background-color: #141416;
+  border: 1px solid #242428;
+  border-radius: 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.theme-card:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.theme-pill-btn-red {
+  background-color: #EF4444;
+  color: #FFFFFF;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -2px rgba(239, 68, 68, 0.35);
+}
+
+.theme-pill-btn-red:hover {
+  background-color: #DC2626;
+  box-shadow: 0 6px 24px -2px rgba(239, 68, 68, 0.5);
+  transform: translateY(-1px);
+}
+
+.theme-pill-btn-red:active {
+  transform: translateY(0);
+}
+
+/* Custom Marquee Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.animate-marquee-infinite:hover {
+  animation-play-state: paused;
+}
+
+/* Subtle background grid & dot patterns */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+/* Watermark typography in the background */
+.watermark-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.04);
+  letter-spacing: -0.05em;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242428;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EF4444;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(239, 68, 68, 0.3);
+  color: #FFFFFF;
+}
