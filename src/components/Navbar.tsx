@@ -73,8 +73,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenContact }) =
               <span className="tracking-tighter">SK</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-sm sm:text-base font-extrabold tracking-tight text-[#EDEDED] group-hover:text-[#EF4444] transition-colors">
-                Sathiesh
+              <span className="text-sm sm:text-base font-extrabold tracking-tight text-[#EDEDED] group-hover:text-[#EF4444] transition-colors whitespace-nowrap">
+                Sathiesh Kumar.M
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#EF4444] animate-pulse" />
             </div>
