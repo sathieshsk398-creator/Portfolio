@@ -33,7 +33,7 @@ Building Intelligent Full-Stack Applications with React, Node.js, and the Google
 11. [Patent](#patent)
 12. [Education](#education)
 13. [Contact](#contact)
-14. [License](#license)
+
 
 ---
 
@@ -257,13 +257,6 @@ A novel electronic voting architecture featuring multi-factor biometric authenti
 
 ---
 
-## License
-
-This project is intended for personal portfolio use. Feel free to reference the structure, but please do not reuse personal content (bio, projects, images) as your own.
-
-<div align="center">
-<sub>Built with React, TypeScript, and Tailwind CSS.</sub>
-</div>
 
 ## Author
 
