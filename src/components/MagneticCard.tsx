@@ -68,7 +68,7 @@ export const MagneticCard: React.FC<MagneticCardProps> = ({
         rotateY,
         transformStyle: 'preserve-3d',
       }}
-      className={`relative overflow-hidden transition-all duration-200 ${className}`}
+      className={`relative overflow-hidden transition-all duration-300 ease-in-out ${className}`}
     >
       {/* Interactive Cursor Spotlight Radial Gradient */}
       <div

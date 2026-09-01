@@ -57,7 +57,7 @@ export const AchievementsBento: React.FC = () => {
             <MagneticCard
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl hover:border-[#EF4444]/40 h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-2xl hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -75,7 +75,7 @@ export const AchievementsBento: React.FC = () => {
                 {/* Categorized Skills Grid */}
                 <div className="space-y-3">
                   {/* Category 1: Languages */}
-                  <div className="p-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] space-y-2">
+                  <div className="p-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E24] border border-[#242428] hover:border-red-500/40 transition-all duration-300 ease-in-out space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono text-[#A1A1AA] uppercase tracking-wider font-bold">
                         Programming Languages
@@ -83,19 +83,19 @@ export const AchievementsBento: React.FC = () => {
                       <span className="text-[9px] font-mono text-zinc-500">4 Languages</span>
                     </div>
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">Java</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#EF4444]/15 text-[#EF4444] font-bold">Medium</span>
                       </div>
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">JavaScript</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#EF4444]/15 text-[#EF4444] font-bold">Medium</span>
                       </div>
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-blue-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">TypeScript</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-blue-500/15 text-blue-400 font-bold">Basic</span>
                       </div>
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">SQL</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#EF4444]/15 text-[#EF4444] font-bold">Medium</span>
                       </div>
@@ -103,7 +103,7 @@ export const AchievementsBento: React.FC = () => {
                   </div>
 
                   {/* Category 2: Frontend */}
-                  <div className="p-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] space-y-2">
+                  <div className="p-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E24] border border-[#242428] hover:border-red-500/40 transition-all duration-300 ease-in-out space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono text-[#A1A1AA] uppercase tracking-wider font-bold">
                         Frontend Development
@@ -111,11 +111,11 @@ export const AchievementsBento: React.FC = () => {
                       <span className="text-[9px] font-mono text-zinc-500">UI / UX Architecture</span>
                     </div>
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">React.js</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#EF4444]/15 text-[#EF4444] font-bold">Medium</span>
                       </div>
-                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex items-center justify-between p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-emerald-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-xs font-bold text-white">HTML5 / CSS3</span>
                         <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-400 font-bold">Advanced</span>
                       </div>
@@ -123,7 +123,7 @@ export const AchievementsBento: React.FC = () => {
                   </div>
 
                   {/* Category 3: Backend, AI & Tools */}
-                  <div className="p-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] space-y-2">
+                  <div className="p-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E24] border border-[#242428] hover:border-red-500/40 transition-all duration-300 ease-in-out space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono text-[#A1A1AA] uppercase tracking-wider font-bold">
                         AI, Backend & Tooling
@@ -131,15 +131,15 @@ export const AchievementsBento: React.FC = () => {
                       <span className="text-[9px] font-mono text-zinc-500">APIs & Infrastructure</span>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      <div className="flex flex-col p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex flex-col p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-[11px] font-bold text-white truncate">Gemini API</span>
                         <span className="text-[9px] font-mono text-[#EF4444] font-bold mt-0.5">Advanced</span>
                       </div>
-                      <div className="flex flex-col p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex flex-col p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-amber-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-[11px] font-bold text-white">MySQL</span>
                         <span className="text-[9px] font-mono text-amber-400 font-bold mt-0.5">Medium</span>
                       </div>
-                      <div className="flex flex-col p-2 rounded-xl bg-black/40 border border-white/5">
+                      <div className="flex flex-col p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-blue-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                         <span className="text-[11px] font-bold text-white">Git & GitHub</span>
                         <span className="text-[9px] font-mono text-blue-400 font-bold mt-0.5">Basic</span>
                       </div>
@@ -168,7 +168,7 @@ export const AchievementsBento: React.FC = () => {
             <MagneticCard
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl hover:border-[#EF4444]/40 h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -183,7 +183,7 @@ export const AchievementsBento: React.FC = () => {
                   </span>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-[#1A1A1E] border border-[#242428] mb-4">
+                <div className="p-4 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E24] border border-[#242428] hover:border-red-500/40 transition-all duration-300 ease-in-out mb-4">
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-[10px] uppercase font-bold tracking-wider text-[#A1A1AA]">Total Problems Solved</div>
@@ -196,15 +196,15 @@ export const AchievementsBento: React.FC = () => {
                   </div>
 
                   <div className="mt-3.5 grid grid-cols-3 gap-2 text-center">
-                    <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                    <div className="p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-emerald-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                       <div className="text-[9px] text-[#A1A1AA] font-mono font-bold uppercase">Base</div>
                       <div className="text-xs font-bold text-emerald-400 font-mono">Data Structures</div>
                     </div>
-                    <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                    <div className="p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-amber-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                       <div className="text-[9px] text-[#A1A1AA] font-mono font-bold uppercase">Core Focus</div>
                       <div className="text-xs font-bold text-amber-400 font-mono">Algorithms & DP</div>
                     </div>
-                    <div className="p-2 rounded-xl bg-black/40 border border-white/5">
+                    <div className="p-2 rounded-xl bg-black/40 hover:bg-black/70 border border-white/5 hover:border-red-500/40 hover:scale-[1.02] transition-all duration-300 ease-in-out">
                       <div className="text-[9px] text-[#A1A1AA] font-mono font-bold uppercase">Competitive</div>
                       <div className="text-xs font-bold text-[#EF4444] font-mono">TCS CodeVita</div>
                     </div>
@@ -212,7 +212,7 @@ export const AchievementsBento: React.FC = () => {
                 </div>
 
                 {/* TCS CodeVita Callout */}
-                <div className="p-3.5 rounded-2xl bg-[#1A1A1E] border border-[#242428] space-y-1 mb-2">
+                <div className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E24] border border-[#242428] hover:border-red-500/40 hover:scale-[1.01] transition-all duration-300 ease-in-out space-y-1 mb-2">
                   <div className="text-xs font-bold text-white flex items-center gap-1.5">
                     <Award className="w-3.5 h-3.5 text-[#EF4444]" />
                     <span>TCS CodeVita Season 13 Global Rank</span>
@@ -252,7 +252,7 @@ export const AchievementsBento: React.FC = () => {
             <MagneticCard
               tiltStrength={1.5}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl hover:border-[#EF4444]/40 transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex items-center justify-between mb-5">
@@ -272,13 +272,13 @@ export const AchievementsBento: React.FC = () => {
                     <div
                       key={cert.id}
                       onClick={() => setSelectedCert(selectedCert === cert.id ? null : cert.id)}
-                      className="p-4 rounded-2xl bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-[#EF4444]/40 transition-all cursor-pointer group"
+                      className="p-4 rounded-2xl bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-red-500/60 hover:shadow-md hover:shadow-red-500/10 hover:scale-[1.02] hover:-translate-y-0.5 transition-all duration-300 ease-in-out cursor-pointer group"
                     >
                       <div className="flex items-start justify-between gap-2 mb-2">
                         <div className="flex items-start gap-2">
                           <CheckCircle2 className="w-4 h-4 text-[#EF4444] shrink-0 mt-0.5" />
                           <div>
-                            <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-[#EF4444] transition-colors leading-snug">
+                            <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-[#EF4444] transition-colors duration-300 leading-snug">
                               {cert.title}
                             </h4>
                             <span className="text-[11px] text-[#A1A1AA]">

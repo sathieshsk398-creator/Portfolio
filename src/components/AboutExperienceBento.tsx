@@ -74,7 +74,7 @@ export const AboutExperienceBento: React.FC = () => {
               id="bento-experience-card"
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#EF4444]/40 shadow-2xl h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-500/60 shadow-2xl hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               <div>
                 {/* Top Row: Tag & Period */}
@@ -118,7 +118,7 @@ export const AboutExperienceBento: React.FC = () => {
                 <div className="flex flex-wrap gap-1.5">
                   {experience.skills.map((skill) => (
                     <Magnetic key={skill} strength={0.2}>
-                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#1A1A1E] border border-[#242428] text-[#A1A1AA]">
+                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-[#1A1A1E] hover:bg-[#222228] border border-[#242428] hover:border-red-500/40 text-[#A1A1AA] hover:text-white transition-all duration-300 ease-in-out">
                         {skill}
                       </span>
                     </Magnetic>
@@ -146,7 +146,7 @@ export const AboutExperienceBento: React.FC = () => {
               id="bento-patent-card"
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#EF4444]/40 shadow-2xl h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-500/60 shadow-2xl hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               {/* Top Badge */}
               <div className="flex justify-between items-start mb-4">
@@ -190,12 +190,12 @@ export const AboutExperienceBento: React.FC = () => {
                 <Magnetic strength={0.35}>
                   <button
                     onClick={handleSimulateScan}
-                    className={`px-3.5 py-1.5 rounded-full text-xs font-mono font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                    className={`px-3.5 py-1.5 rounded-full text-xs font-mono font-bold flex items-center gap-1.5 transition-all duration-300 ease-in-out cursor-pointer ${
                       scanState === 'scanning'
                         ? 'bg-[#EF4444]/20 text-[#EF4444] border border-[#EF4444]/40 animate-pulse'
                         : scanState === 'verified'
                         ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                        : 'bg-[#1A1A1E] hover:bg-[#242428] text-zinc-200 border border-[#242428]'
+                        : 'bg-[#1A1A1E] hover:bg-[#242428] hover:border-red-500/40 text-zinc-200 border border-[#242428]'
                     }`}
                   >
                     <Fingerprint className="w-3.5 h-3.5 text-[#EF4444]" />
@@ -222,7 +222,7 @@ export const AboutExperienceBento: React.FC = () => {
               id="bento-education-card"
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#EF4444]/40 shadow-2xl h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-500/60 shadow-2xl hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex items-center gap-2 mb-3">
@@ -279,7 +279,7 @@ export const AboutExperienceBento: React.FC = () => {
               id="bento-philosophy-card"
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#EF4444]/40 shadow-2xl h-full transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-500/60 shadow-2xl hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 h-full transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex justify-between items-start mb-3">
@@ -303,11 +303,11 @@ export const AboutExperienceBento: React.FC = () => {
                 </p>
 
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-[#1A1A1E] border border-[#242428] p-3 rounded-2xl">
+                  <div className="bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-red-500/40 hover:scale-[1.02] p-3 rounded-2xl transition-all duration-300 ease-in-out">
                     <div className="text-xs font-bold text-white mb-0.5">Zero-Hallucination</div>
                     <div className="text-[10px] text-[#A1A1AA]">Strict JSON schema validation & repair cost matrix matching.</div>
                   </div>
-                  <div className="bg-[#1A1A1E] border border-[#242428] p-3 rounded-2xl">
+                  <div className="bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-red-500/40 hover:scale-[1.02] p-3 rounded-2xl transition-all duration-300 ease-in-out">
                     <div className="text-xs font-bold text-white mb-0.5">High Concurrency</div>
                     <div className="text-[10px] text-[#A1A1AA]">Tested for 10,000+ daily hospital operational records.</div>
                   </div>

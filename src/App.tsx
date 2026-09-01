@@ -14,8 +14,9 @@ import { AchievementsBento } from './components/AchievementsBento';
 import { InteractiveContact } from './components/InteractiveContact';
 import { ResumeModal } from './components/ResumeModal';
 import { Footer } from './components/Footer';
-import { CustomCursor } from './components/CustomCursor';
 import { ScrollProgress } from './components/ScrollProgress';
+import { ParticleBackground } from './components/ParticleBackground';
+import { CustomCursor } from './components/CustomCursor';
 
 const sectionVariants: Variants = {
   hidden: { 
@@ -44,11 +45,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0D0D0D] text-[#EDEDED] flex flex-col relative selection:bg-[#EF4444]/30 selection:text-white font-sans">
+      {/* Background Interactive Crimson Constellation Network */}
+      <ParticleBackground fixed={true} />
+
+      {/* Ambient Glowing Cursor Light Follower (Without white dots/circles) */}
+      <CustomCursor />
+
       {/* Scroll Progress Bar at the Top */}
       <ScrollProgress />
-
-      {/* Custom Magnetic Follow-Cursor */}
-      <CustomCursor />
 
       {/* Navigation Bar */}
       <Navbar 
@@ -57,7 +61,7 @@ export default function App() {
       />
 
       {/* Main Content Sections with Reveal Animations */}
-      <main className="flex-1 flex flex-col">
+      <main className="flex-1 flex flex-col relative z-10">
         {/* 1. Hero Section with 2-column layout and portrait photo */}
         <motion.div
           variants={sectionVariants}
@@ -123,7 +127,9 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
 
       {/* Full Resume Modal */}
       <ResumeModal 

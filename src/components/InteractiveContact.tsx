@@ -110,7 +110,7 @@ END:VCARD`;
             <MagneticCard
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl h-full hover:border-[#EF4444]/40 transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl h-full hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 ease-in-out"
             >
               <div>
                 {/* Availability Status Badge */}
@@ -131,7 +131,7 @@ END:VCARD`;
                   {/* Email Box */}
                   <div 
                     onClick={() => handleCopy(personalInfo.email, 'email')}
-                    className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-[#EF4444]/40 transition-all cursor-pointer group flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-red-500/60 hover:shadow-md hover:shadow-red-500/10 hover:scale-[1.02] transition-all duration-300 ease-in-out cursor-pointer group flex items-center justify-between"
                   >
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-xl bg-[#EF4444]/10 text-[#EF4444] border border-[#EF4444]/20">
@@ -139,7 +139,7 @@ END:VCARD`;
                       </div>
                       <div>
                         <div className="text-[10px] font-mono text-[#A1A1AA] uppercase font-bold">Email Address</div>
-                        <div className="text-xs sm:text-sm font-mono font-bold text-[#EDEDED] group-hover:text-[#EF4444] transition-colors">
+                        <div className="text-xs sm:text-sm font-mono font-bold text-[#EDEDED] group-hover:text-[#EF4444] transition-colors duration-300">
                           {personalInfo.email}
                         </div>
                       </div>
@@ -159,7 +159,7 @@ END:VCARD`;
                   {/* Phone Box */}
                   <div 
                     onClick={() => handleCopy(personalInfo.phone, 'phone')}
-                    className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-emerald-500/40 transition-all cursor-pointer group flex items-center justify-between"
+                    className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-emerald-500/60 hover:shadow-md hover:shadow-emerald-500/10 hover:scale-[1.02] transition-all duration-300 ease-in-out cursor-pointer group flex items-center justify-between"
                   >
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -167,7 +167,7 @@ END:VCARD`;
                       </div>
                       <div>
                         <div className="text-[10px] font-mono text-[#A1A1AA] uppercase font-bold">Phone / WhatsApp</div>
-                        <div className="text-xs sm:text-sm font-mono font-bold text-[#EDEDED] group-hover:text-emerald-400 transition-colors">
+                        <div className="text-xs sm:text-sm font-mono font-bold text-[#EDEDED] group-hover:text-emerald-400 transition-colors duration-300">
                           {personalInfo.phone}
                         </div>
                       </div>
@@ -185,7 +185,7 @@ END:VCARD`;
                   </div>
 
                   {/* Location Box */}
-                  <div className="p-3.5 rounded-2xl bg-[#1A1A1E] border border-[#242428] flex items-center gap-3">
+                  <div className="p-3.5 rounded-2xl bg-[#1A1A1E] hover:bg-[#202026] border border-[#242428] hover:border-red-500/40 hover:scale-[1.01] transition-all duration-300 ease-in-out flex items-center gap-3">
                     <div className="p-2 rounded-xl bg-[#EF4444]/10 text-[#EF4444] border border-[#EF4444]/20">
                       <MapPin className="w-4 h-4" />
                     </div>
@@ -204,7 +204,7 @@ END:VCARD`;
                 <Magnetic strength={0.3}>
                   <button
                     onClick={generateVCard}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#A1A1AA] hover:text-white transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#A1A1AA] hover:text-white transition-colors duration-300 cursor-pointer"
                   >
                     <Download className="w-3.5 h-3.5 text-[#EF4444]" />
                     <span>Save Contact (vCard)</span>
@@ -226,7 +226,7 @@ END:VCARD`;
             <MagneticCard
               tiltStrength={2}
               spotlightColor="rgba(239, 68, 68, 0.12)"
-              className="bg-[#141416] border border-[#242428] rounded-3xl p-6 sm:p-8 shadow-2xl h-full flex flex-col justify-between hover:border-[#EF4444]/40 transition-all"
+              className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] rounded-3xl p-6 sm:p-8 shadow-2xl h-full flex flex-col justify-between hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 ease-in-out"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -252,7 +252,7 @@ END:VCARD`;
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="e.g. Alex Henderson"
-                        className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-colors"
+                        className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E22] border border-[#242428] hover:border-red-500/30 focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-all duration-300 ease-in-out"
                       />
                     </div>
 
@@ -267,7 +267,7 @@ END:VCARD`;
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="alex@company.com"
-                        className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-colors"
+                        className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E22] border border-[#242428] hover:border-red-500/30 focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-all duration-300 ease-in-out"
                       />
                     </div>
                   </div>
@@ -283,7 +283,7 @@ END:VCARD`;
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       placeholder="Hi Sathiesh, let's discuss an engineering opportunity or full-stack project..."
-                      className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] border border-[#242428] focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-2xl bg-[#1A1A1E] hover:bg-[#1E1E22] border border-[#242428] hover:border-red-500/30 focus:border-[#EF4444] focus:outline-none text-xs text-white placeholder:text-[#52525B] transition-all duration-300 ease-in-out resize-none"
                     />
                   </div>
 
@@ -296,7 +296,7 @@ END:VCARD`;
                       <button
                         type="submit"
                         disabled={isSending || sentSuccess}
-                        className="w-full sm:w-auto px-8 py-3.5 theme-pill-btn-red flex items-center justify-center gap-2 transition-all active:scale-95 disabled:opacity-50 cursor-pointer"
+                        className="w-full sm:w-auto px-8 py-3.5 theme-pill-btn-red flex items-center justify-center gap-2 transition-all duration-300 ease-in-out active:scale-95 disabled:opacity-50 cursor-pointer"
                       >
                         {isSending ? (
                           <>

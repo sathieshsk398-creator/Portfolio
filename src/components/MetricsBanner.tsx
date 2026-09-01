@@ -34,7 +34,7 @@ export const MetricsBanner: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="bg-[#141416] border border-[#242428] rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl relative overflow-hidden"
+          className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] hover:border-red-500/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 ease-in-out relative overflow-hidden"
         >
           {/* Left Red Dot Matrix (Figma signature) */}
           <div className="hidden lg:block">
@@ -46,7 +46,7 @@ export const MetricsBanner: React.FC = () => {
             {metrics.map((item, idx) => (
               <div 
                 key={idx}
-                className="flex items-center gap-3 sm:gap-4 justify-start md:justify-center border-l md:border-l-0 md:first:border-l-0 pl-3 md:pl-0 border-[#242428]"
+                className="flex items-center gap-3 sm:gap-4 justify-start md:justify-center border-l md:border-l-0 md:first:border-l-0 pl-3 md:pl-0 border-[#242428] p-2 rounded-2xl hover:bg-white/[0.03] hover:scale-[1.03] transition-all duration-300 ease-in-out"
               >
                 <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#EDEDED] tracking-tight shrink-0 font-mono">
                   {item.value}

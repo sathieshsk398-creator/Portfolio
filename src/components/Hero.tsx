@@ -135,7 +135,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
                   href={personalInfo.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] text-zinc-300 hover:text-white transition-colors cursor-pointer"
+                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-red-500/50 hover:scale-110 hover:-translate-y-0.5 text-zinc-300 hover:text-white transition-all duration-300 ease-in-out cursor-pointer"
                   aria-label="GitHub Profile"
                 >
                   <Github className="w-3.5 h-3.5" />
@@ -145,7 +145,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
                   href={personalInfo.links.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] text-zinc-300 hover:text-[#EF4444] transition-colors cursor-pointer"
+                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-red-500/50 hover:scale-110 hover:-translate-y-0.5 text-zinc-300 hover:text-[#EF4444] transition-all duration-300 ease-in-out cursor-pointer"
                   aria-label="LinkedIn Profile"
                 >
                   <Linkedin className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
                   href={personalInfo.links.leetcode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] text-zinc-300 hover:text-amber-400 transition-colors cursor-pointer"
+                  className="p-2 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-amber-500/50 hover:scale-110 hover:-translate-y-0.5 text-zinc-300 hover:text-amber-400 transition-all duration-300 ease-in-out cursor-pointer"
                   aria-label="LeetCode Profile"
                 >
                   <Terminal className="w-3.5 h-3.5" />
@@ -165,7 +165,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
               {/* 1-Click Copy Email */}
               <button
                 onClick={handleCopyEmail}
-                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] text-xs font-mono text-[#EDEDED] transition-colors cursor-pointer ml-auto"
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A1A1E] hover:bg-[#242428] border border-[#242428] hover:border-red-500/40 hover:scale-[1.02] text-xs font-mono text-[#EDEDED] transition-all duration-300 ease-in-out cursor-pointer ml-auto"
               >
                 <Mail className="w-3.5 h-3.5 text-[#EF4444]" />
                 <span>{personalInfo.email}</span>
@@ -196,7 +196,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
               <MagneticCard
                 tiltStrength={2}
                 spotlightColor="rgba(239, 68, 68, 0.15)"
-                className="bg-[#141416] border border-[#242428] rounded-3xl p-3 sm:p-3.5 shadow-2xl shadow-black relative overflow-hidden group hover:border-[#EF4444]/50 transition-all"
+                className="bg-[#141416] hover:bg-[#17171B] border border-[#242428] hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/15 hover:-translate-y-1 rounded-3xl p-3 sm:p-3.5 shadow-2xl shadow-black relative overflow-hidden group transition-all duration-300 ease-in-out"
               >
                 {/* Strictly using local /profile.jpg file */}
                 <div className="relative rounded-2xl overflow-hidden bg-[#0D0D0D]">
@@ -209,7 +209,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact, onOpenResume }) => {
                   />
 
                   {/* Dark Glass Overlay Tag */}
-                  <div className="absolute bottom-3 left-3 right-3 px-3.5 py-2 rounded-xl bg-black/85 backdrop-blur-md border border-white/10 flex items-center justify-between text-xs">
+                  <div className="absolute bottom-3 left-3 right-3 px-3.5 py-2 rounded-xl bg-black/85 hover:bg-black/95 backdrop-blur-md border border-white/10 hover:border-red-500/40 flex items-center justify-between text-xs transition-all duration-300 ease-in-out">
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-[#EF4444] animate-pulse shadow-[0_0_8px_#EF4444]" />
                       <span className="text-[#EDEDED] font-bold text-[11px] font-mono">Full Stack & AI</span>

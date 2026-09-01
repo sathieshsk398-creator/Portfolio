@@ -74,10 +74,10 @@ export const ProjectShowcase: React.FC = () => {
                   id={`project-card-${project.id}`}
                   tiltStrength={2}
                   spotlightColor="rgba(239, 68, 68, 0.12)"
-                  className="group relative bg-[#141416] rounded-3xl border border-[#242428] hover:border-[#EF4444]/40 p-6 sm:p-8 flex flex-col justify-between shadow-2xl h-full transition-all duration-300 overflow-hidden"
+                  className="group relative bg-[#141416] hover:bg-[#17171B] rounded-3xl border border-[#242428] hover:border-red-500/60 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1.5 p-6 sm:p-8 flex flex-col justify-between shadow-2xl h-full transition-all duration-300 ease-in-out overflow-hidden"
                 >
                   {/* Visual Mockup Preview Card (Mirroring Figma's Floating Mockup Layout) */}
-                  <div className="relative w-full rounded-2xl overflow-hidden mb-6 border border-[#242428] bg-gradient-to-br from-[#1C1C22] to-[#0D0D0D] p-5">
+                  <div className="relative w-full rounded-2xl overflow-hidden mb-6 border border-[#242428] group-hover:border-red-500/30 bg-gradient-to-br from-[#1C1C22] to-[#0D0D0D] p-5 transition-all duration-300 ease-in-out">
                     
                     {/* Background Glow */}
                     <div className={`absolute -top-10 -right-10 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-40 ${
@@ -100,12 +100,12 @@ export const ProjectShowcase: React.FC = () => {
                     <div className="grid grid-cols-2 gap-3 mb-2">
                       {isCarProject ? (
                         <>
-                          <div className="bg-black/60 backdrop-blur-md rounded-xl p-3 border border-white/5">
+                          <div className="bg-black/60 hover:bg-black/80 hover:border-red-500/40 hover:scale-[1.02] backdrop-blur-md rounded-xl p-3 border border-white/5 transition-all duration-300 ease-in-out">
                             <span className="text-[10px] text-zinc-400 font-mono">Classification</span>
                             <div className="text-xl font-bold font-mono text-[#EF4444]">95% ACC</div>
                             <span className="text-[9px] text-zinc-500">Damage Taxonomy</span>
                           </div>
-                          <div className="bg-black/60 backdrop-blur-md rounded-xl p-3 border border-white/5">
+                          <div className="bg-black/60 hover:bg-black/80 hover:border-emerald-500/40 hover:scale-[1.02] backdrop-blur-md rounded-xl p-3 border border-white/5 transition-all duration-300 ease-in-out">
                             <span className="text-[10px] text-zinc-400 font-mono">Price Error</span>
                             <div className="text-xl font-bold font-mono text-emerald-400">-40% ERR</div>
                             <span className="text-[9px] text-zinc-500">Deterministic Matrix</span>
@@ -113,12 +113,12 @@ export const ProjectShowcase: React.FC = () => {
                         </>
                       ) : (
                         <>
-                          <div className="bg-black/60 backdrop-blur-md rounded-xl p-3 border border-white/5">
+                          <div className="bg-black/60 hover:bg-black/80 hover:border-red-500/40 hover:scale-[1.02] backdrop-blur-md rounded-xl p-3 border border-white/5 transition-all duration-300 ease-in-out">
                             <span className="text-[10px] text-zinc-400 font-mono">Throughput</span>
                             <div className="text-xl font-bold font-mono text-[#EF4444]">10,000+</div>
                             <span className="text-[9px] text-zinc-500">Daily Records</span>
                           </div>
-                          <div className="bg-black/60 backdrop-blur-md rounded-xl p-3 border border-white/5">
+                          <div className="bg-black/60 hover:bg-black/80 hover:border-emerald-500/40 hover:scale-[1.02] backdrop-blur-md rounded-xl p-3 border border-white/5 transition-all duration-300 ease-in-out">
                             <span className="text-[10px] text-zinc-400 font-mono">Triage Speed</span>
                             <div className="text-xl font-bold font-mono text-emerald-400">+25%</div>
                             <span className="text-[9px] text-zinc-500">Optimized Wait Times</span>
@@ -139,7 +139,7 @@ export const ProjectShowcase: React.FC = () => {
 
                   <div>
                     {/* Project Title & Description */}
-                    <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-[#EF4444] transition-colors mb-2">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-[#EF4444] transition-colors duration-300 mb-2">
                       {project.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-[#A1A1AA] leading-relaxed mb-4">
@@ -160,7 +160,7 @@ export const ProjectShowcase: React.FC = () => {
                     <div className="flex flex-wrap gap-1.5 mb-6">
                       {project.techStack.map((tech) => (
                         <Magnetic key={tech} strength={0.2}>
-                          <span className="text-[10px] font-mono font-semibold px-2.5 py-1 rounded-full bg-[#1A1A1E] border border-[#242428] text-[#A1A1AA] hover:text-white hover:border-[#EF4444]/40 transition-colors">
+                          <span className="text-[10px] font-mono font-semibold px-2.5 py-1 rounded-full bg-[#1A1A1E] hover:bg-[#222228] border border-[#242428] text-[#A1A1AA] hover:text-white hover:border-red-500/50 hover:scale-105 inline-block transition-all duration-300 ease-in-out">
                             {tech}
                           </span>
                         </Magnetic>

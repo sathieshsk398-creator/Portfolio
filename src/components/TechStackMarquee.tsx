@@ -52,7 +52,7 @@ export const TechStackMarquee: React.FC = () => {
       <div className="w-full max-w-6xl mx-auto">
         
         {/* Dynamic Continuous Marquee Banner */}
-        <div className="relative w-full py-4 overflow-hidden rounded-3xl bg-[#141416] border border-[#242428] shadow-xl">
+        <div className="relative w-full py-4 overflow-hidden rounded-3xl bg-[#141416] hover:bg-[#17171B] border border-[#242428] hover:border-red-500/60 shadow-xl hover:shadow-lg hover:shadow-red-500/10 transition-all duration-300 ease-in-out">
           {/* Gradient fade masks on left and right edges */}
           <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#141416] to-transparent z-10 pointer-events-none" />
           <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#141416] to-transparent z-10 pointer-events-none" />
@@ -64,7 +64,7 @@ export const TechStackMarquee: React.FC = () => {
                 key={`${skill.name}-${index}`}
                 onMouseEnter={() => setHoveredSkill(skill)}
                 onMouseLeave={() => setHoveredSkill(null)}
-                className="flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#1A1A1E] border border-[#242428] hover:border-[#EF4444]/60 text-zinc-200 hover:text-white hover:bg-[#202026] transition-all cursor-pointer shrink-0 shadow-sm"
+                className="flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-[#1A1A1E] border border-[#242428] hover:border-red-500/60 hover:shadow-md hover:shadow-red-500/10 hover:scale-105 hover:-translate-y-0.5 text-zinc-200 hover:text-white hover:bg-[#222228] transition-all duration-300 ease-in-out cursor-pointer shrink-0 shadow-sm"
               >
                 <div className="shrink-0">{getSkillIcon(skill.iconName)}</div>
                 <span className="text-xs font-bold tracking-tight whitespace-nowrap">
