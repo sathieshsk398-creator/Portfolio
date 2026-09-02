@@ -119,7 +119,7 @@ export const projects: Project[] = [
     status: "Production Ready",
     highlightBadge: "Google Gemini Multimodal Powered",
     demoUrl: "#demo-car-damage",
-    githubUrl: "https://github.com/sathieshsk398-creator/AI-Car-Damage-Estimator"
+    githubUrl: "https://github.com/sathieshsk398-creator/AI-Car-Damage-Detection-Estimator-"
   },
   {
     id: "ai-hospital-management",
